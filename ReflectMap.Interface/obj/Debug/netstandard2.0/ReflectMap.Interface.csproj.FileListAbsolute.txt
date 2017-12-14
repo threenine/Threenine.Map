@@ -1,0 +1,8 @@
+/home/gary/code/ReflectMap/ReflectMap.Interface/bin/Debug/netstandard2.0/ReflectMap.Interface.deps.json
+/home/gary/code/ReflectMap/ReflectMap.Interface/bin/Debug/netstandard2.0/ReflectMap.Interface.dll
+/home/gary/code/ReflectMap/ReflectMap.Interface/bin/Debug/netstandard2.0/ReflectMap.Interface.pdb
+/home/gary/code/ReflectMap/ReflectMap.Interface/obj/Debug/netstandard2.0/ReflectMap.Interface.csproj.CoreCompileInputs.cache
+/home/gary/code/ReflectMap/ReflectMap.Interface/obj/Debug/netstandard2.0/ReflectMap.Interface.AssemblyInfoInputs.cache
+/home/gary/code/ReflectMap/ReflectMap.Interface/obj/Debug/netstandard2.0/ReflectMap.Interface.AssemblyInfo.cs
+/home/gary/code/ReflectMap/ReflectMap.Interface/obj/Debug/netstandard2.0/ReflectMap.Interface.dll
+/home/gary/code/ReflectMap/ReflectMap.Interface/obj/Debug/netstandard2.0/ReflectMap.Interface.pdb

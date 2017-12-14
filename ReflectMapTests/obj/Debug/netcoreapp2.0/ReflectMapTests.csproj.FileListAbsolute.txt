@@ -1,0 +1,17 @@
+/home/gary/code/ReflectMap/ReflectMapTests/bin/Debug/netcoreapp2.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/home/gary/code/ReflectMap/ReflectMapTests/bin/Debug/netcoreapp2.0/xunit.runner.utility.netstandard15.dll
+/home/gary/code/ReflectMap/ReflectMapTests/bin/Debug/netcoreapp2.0/xunit.runner.reporters.netstandard15.dll
+/home/gary/code/ReflectMap/ReflectMapTests/bin/Debug/netcoreapp2.0/ReflectMapTests.deps.json
+/home/gary/code/ReflectMap/ReflectMapTests/bin/Debug/netcoreapp2.0/ReflectMapTests.runtimeconfig.json
+/home/gary/code/ReflectMap/ReflectMapTests/bin/Debug/netcoreapp2.0/ReflectMapTests.runtimeconfig.dev.json
+/home/gary/code/ReflectMap/ReflectMapTests/bin/Debug/netcoreapp2.0/ReflectMapTests.dll
+/home/gary/code/ReflectMap/ReflectMapTests/bin/Debug/netcoreapp2.0/ReflectMapTests.pdb
+/home/gary/code/ReflectMap/ReflectMapTests/obj/Debug/netcoreapp2.0/ReflectMapTests.csproj.CoreCompileInputs.cache
+/home/gary/code/ReflectMap/ReflectMapTests/obj/Debug/netcoreapp2.0/ReflectMapTests.AssemblyInfoInputs.cache
+/home/gary/code/ReflectMap/ReflectMapTests/obj/Debug/netcoreapp2.0/ReflectMapTests.AssemblyInfo.cs
+/home/gary/code/ReflectMap/ReflectMapTests/obj/Debug/netcoreapp2.0/ReflectMapTests.dll
+/home/gary/code/ReflectMap/ReflectMapTests/obj/Debug/netcoreapp2.0/ReflectMapTests.pdb
+/home/gary/code/ReflectMap/ReflectMapTests/bin/Debug/netcoreapp2.0/ReflectMap.dll
+/home/gary/code/ReflectMap/ReflectMapTests/bin/Debug/netcoreapp2.0/ReflectMap.Interface.dll
+/home/gary/code/ReflectMap/ReflectMapTests/bin/Debug/netcoreapp2.0/ReflectMap.pdb
+/home/gary/code/ReflectMap/ReflectMapTests/bin/Debug/netcoreapp2.0/ReflectMap.Interface.pdb
