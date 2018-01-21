@@ -1,10 +1,11 @@
 using System;
 
-namespace ReflectMap.Interface
+
+namespace Threenine.Map
 {
+   
    public  interface IMapTo<T>
     {
         
     }
-    
 }

@@ -1,6 +1,6 @@
 namespace ReflectMapTests
 {
-    using ReflectMap.Interface;
+
 
     public class TestDomainObject : IMapTo<TestEntityObject>
     { 

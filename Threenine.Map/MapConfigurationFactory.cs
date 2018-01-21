@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using AutoMapper;
 using PhilosophicalMonkey;
-using ReflectMap.Interface;
 
-
-namespace ReflectMap
+namespace Threenine.Map
 {
     public class MapConfigurationFactory
     {   

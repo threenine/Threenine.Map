@@ -1,8 +1,0 @@
-/home/gary/code/mapping/Mapping.Interface/obj/Debug/netstandard2.0/Mapping.Interface.csproj.CoreCompileInputs.cache
-/home/gary/code/mapping/Mapping.Interface/obj/Debug/netstandard2.0/Mapping.Interface.AssemblyInfoInputs.cache
-/home/gary/code/mapping/Mapping.Interface/obj/Debug/netstandard2.0/Mapping.Interface.AssemblyInfo.cs
-/home/gary/code/mapping/Mapping.Interface/bin/Debug/netstandard2.0/Mapping.Interface.deps.json
-/home/gary/code/mapping/Mapping.Interface/bin/Debug/netstandard2.0/Mapping.Interface.dll
-/home/gary/code/mapping/Mapping.Interface/bin/Debug/netstandard2.0/Mapping.Interface.pdb
-/home/gary/code/mapping/Mapping.Interface/obj/Debug/netstandard2.0/Mapping.Interface.dll
-/home/gary/code/mapping/Mapping.Interface/obj/Debug/netstandard2.0/Mapping.Interface.pdb
