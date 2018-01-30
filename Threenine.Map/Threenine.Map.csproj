@@ -2,6 +2,20 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.2</Version>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Company>Three Nine Consulting Limited</Company>
+    <Authors>Gary Woodfine</Authors>
+    <PackageProjectUrl>https://garywoodfine.com/generic-repository-pattern-net-core/</PackageProjectUrl>
+    <PackageIconUrl>http://static.threenine.co.uk/threeninemap_icon.png</PackageIconUrl>
+    <PackageTags>generic repository</PackageTags>
+    <Copyright>Copyright ©2018 Three Nine Consulting Limited</Copyright>
+    <Description>A generic repository wrapper library for entity framework core</Description>
+    <PackageLicenseUrl>http://opensource.org/licenses/MS-PL</PackageLicenseUrl>
+    <NeutralLanguage>en</NeutralLanguage>
+    <RepositoryUrl>https://github.com/threenine/ReflectMap</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
