@@ -1,4 +1,5 @@
-namespace ReflectMapTests
+using Threenine.Map;
+namespace Threenine.Map.Tests
 {
     public class TestEntityObject
     {

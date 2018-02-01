@@ -1,4 +1,6 @@
-namespace ReflectMapTests
+
+using Threenine.Map;
+namespace Threenine.Map.Tests
 {
 
 

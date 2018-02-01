@@ -1,17 +1,17 @@
 using System;
 using Xunit;
 using AutoMapper;
-using ReflectMap;
 using PhilosophicalMonkey;
+using Threenine.Map;
 
-namespace ReflectMapTests
+namespace Threenine.Map.Tests
 {
     public class MappingTests
     {
         public MappingTests()
         {
             
-            var seedTypes = new Type[] { typeof(ReflectMapTests.TestDomainObject) };
+            var seedTypes = new Type[] { typeof(TestDomainObject) };
             var assemblies = Reflect.OnTypes.GetAssemblies(seedTypes);
             var typesInAssemblies = Reflect.OnTypes.GetAllExportedTypes(assemblies);
             MapConfigurationFactory.LoadAllMappings(typesInAssemblies);
