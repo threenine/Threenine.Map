@@ -17,7 +17,7 @@ build_script:
     - cmd: dotnet build ./Threenine.Map/Threenine.Map.csproj -c Release
     - cmd: dotnet pack  -c Release /p:PackageVersion=1.0.{build} 
 test_script:
-- dotnet test "./UnitTests/MapperTests/MapperTests.csproj" -c Release
+    - cmd: dotnet test "./UnitTests/MapperTests/MapperTests.csproj" -c Release
 artifacts:
 - path: ./Threenine.Map/bin/Release/*.nupkg
   name: NuGet
