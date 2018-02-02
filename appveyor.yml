@@ -1,0 +1,29 @@
+version: '1.0.{build}'
+image: Visual Studio 2017
+branches:
+  only:
+  - master
+init:
+  # Best practice (Windows line endings different to Unix/Linux)
+  - cmd: git config --global core.autocrlf true
+install:
+  - appveyor DownloadFile https://dist.nuget.org/win-x86-commandline/v4.0.0/nuget.exe
+before_build:
+  # Display .NET Core version
+  - cmd: dotnet --version
+  # Display minimal restore text
+  - cmd: dotnet restore ./Threenine.Map/Threenine.Map.csproj --verbosity m
+build_script:
+    - cmd: dotnet build ./Threenine.Map/Threenine.Map.csproj -c Release
+    - cmd: dotnet pack  -c Release /p:PackageVersion=1.0.{build} 
+test_script:
+- dotnet test "./UnitTests/MapperTests/MapperTests.csproj" -c Release
+artifacts:
+- path: ./Threenine.Map/bin/Release/*.nupkg
+  name: NuGet
+
+deploy:
+- provider: NuGet
+   api_key:
+    secure: mf21OOa1QnyeVLSIaFDmmEj63k0aZ8NkhKIa7YspDZtCMRWfcHYpF/GXnJn3lDv4
+  skip_symbols: true
