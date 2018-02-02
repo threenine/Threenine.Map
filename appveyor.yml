@@ -15,7 +15,7 @@ before_build:
   - cmd: dotnet restore ./Threenine.Map/Threenine.Map.csproj --verbosity m
 build_script:
     - cmd: dotnet build ./Threenine.Map/Threenine.Map.csproj -c Release
-    - cmd: dotnet pack  -c Release /p:PackageVersion=1.0.{build} 
+    - cmd: dotnet pack  -c Release /p:PackageVersion=1.0.2
 test_script:
     - cmd: dotnet test "./UnitTests/MapperTests/MapperTests.csproj" -c Release
 artifacts:
