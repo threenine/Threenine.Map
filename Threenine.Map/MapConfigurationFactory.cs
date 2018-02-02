@@ -8,13 +8,7 @@ namespace Threenine.Map
 {
     public class MapConfigurationFactory
     {
-        public static MapperConfiguration CreateConfiguration(IList<Type> types)
-        {
-            MapperConfiguration config = new MapperConfiguration(cfg => { LoadAllMappings(cfg, types); });
-            return config;
-        }
-
-        public static void Scan<TType>(Func<AssemblyName, bool> assemblyFilter = null)
+       public static void Scan<TType>(Func<AssemblyName, bool> assemblyFilter = null)
         {
             var target = typeof(TType).Assembly;
 
@@ -33,7 +27,7 @@ namespace Threenine.Map
         public static void LoadMapsFromAssemblies(params Assembly[] assemblies)
         {
             var types = assemblies.SelectMany(a => a.GetExportedTypes()).ToArray();
-            Mapper.Initialize(cfg => LoadAllMappings(cfg, types));
+            LoadAllMappings(types);
         }
 
 
@@ -47,14 +41,7 @@ namespace Threenine.Map
                 });
         }
 
-
-        public static void LoadAllMappings(IMapperConfigurationExpression config, IList<Type> types)
-        {
-            LoadStandardMappings(config, types);
-            LoadCustomMappings(config, types);
-        }
-
-
+        
         public static void LoadCustomMappings(IMapperConfigurationExpression config, IList<Type> types)
         {
             var instancesToMap = (from t in types
