@@ -1,8 +1,9 @@
-using System;
+using DomainObjects;
+using EntityObjects;
 using Xunit;
-using PhilosophicalMonkey;
 using Threenine.Map;
 using FizzWare.NBuilder;
+using AutoMapper;
 
 namespace MapperTests
 {
@@ -10,10 +11,8 @@ namespace MapperTests
     {
         public MapperTests()
         {
-            var seedTypes = new Type[]{ typeof(DomainObjects.Marker )};
-            var assemblies = Reflect.OnTypes.GetAssemblies(seedTypes);
-            var typesInAssemblies = Reflect.OnTypes.GetAllExportedTypes(assemblies);
-            MapConfigurationFactory.LoadAllMappings(typesInAssemblies);
+          
+            MapConfigurationFactory.Scan<MapperTests>();
 
         }
 
@@ -23,7 +22,10 @@ namespace MapperTests
         {
             var testobj = Builder<SimpleDomainObject>.CreateNew().Build();
 
-            Assert.NotNull(testobj);
+           var ent = Mapper.Map<SimpleEntity>(testobj);
+
+            Assert.NotNull(ent);
+            Assert.Equal(ent.Name, testobj.Name);
 
 
         }

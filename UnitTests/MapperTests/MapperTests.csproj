@@ -10,7 +10,6 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />
     <PackageReference Include="moq" Version="4.8.1" />
     <PackageReference Include="nbuilder" Version="5.0.0" />
-    <PackageReference Include="PhilosophicalMonkey" Version="1.4.0" />
     <PackageReference Include="xunit" Version="2.2.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
   </ItemGroup>
@@ -18,6 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\DomainObjects\DomainObjects.csproj" />
     <ProjectReference Include="..\..\Threenine.Map\Threenine.Map.csproj" />
+    <ProjectReference Include="..\EntityObjects\EntityObjects.csproj" />
   </ItemGroup>
 
 </Project>

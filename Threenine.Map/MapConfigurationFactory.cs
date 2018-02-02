@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using AutoMapper;
-using PhilosophicalMonkey;
 
 namespace Threenine.Map
 {
@@ -18,6 +18,32 @@ namespace Threenine.Map
 
             return config;
         }
+
+        public static void Scan<TType>(Func<AssemblyName, bool> assemblyFilter = null)
+        {
+            var target = typeof(TType).Assembly;
+
+            bool LoadAllFilter(AssemblyName x) => true;
+
+            var assembliesToLoad = target.GetReferencedAssemblies()
+                .Where(assemblyFilter ?? LoadAllFilter)
+                .Select(Assembly.Load)
+                .ToList();
+
+            assembliesToLoad.Add(target);
+
+            LoadMapsFromAssemblies(assembliesToLoad.ToArray());
+        }
+
+        public static void LoadMapsFromAssemblies(params Assembly[] assemblies)
+        {
+            var types = assemblies.SelectMany(a => a.GetExportedTypes()).ToArray();
+
+
+            Mapper.Initialize(cfg => LoadAllMappings(cfg, types));
+
+        }
+
 
 
         public static void LoadAllMappings(IList<Type> types)
@@ -41,11 +67,11 @@ namespace Threenine.Map
         public static void LoadCustomMappings(IMapperConfigurationExpression config, IList<Type> types)
         {
             var instancesToMap = (from t in types
-                                  from i in Reflect.OnTypes.GetInterfaces(t)
-                                  where Reflect.OnTypes.IsAssignable(t, typeof(ICustomMap)) &&
-                                        !Reflect.OnTypes.IsAbstract(t) &&
-                                        !Reflect.OnTypes.IsInterface(t)
-                                  select InitializeCustomMappingObject(t)).ToArray();
+                from i in t.GetInterfaces()
+                where typeof(ICustomMap).IsAssignableFrom(t) &&
+                      !t.IsAbstract &&
+                      !t.IsInterface
+                select (ICustomMap)Activator.CreateInstance(t)).ToArray();
 
 
             foreach (var map in instancesToMap)
@@ -63,15 +89,15 @@ namespace Threenine.Map
         public static void LoadStandardMappings(IMapperConfigurationExpression config, IList<Type> types)
         {
             var mapsFrom = (from t in types
-                            from i in Reflect.OnTypes.GetInterfaces(t)
-                            where Reflect.OnTypes.IsGenericType(i) && i.GetGenericTypeDefinition() == typeof(IMapFrom<>) &&
-                                  !Reflect.OnTypes.IsAbstract(t) &&
-                                  !Reflect.OnTypes.IsInterface(t)
-                            select new
-                            {
-                                Source = Reflect.OnTypes.GetGenericArguments(i).First(),
-                                Destination = t
-                            }).ToArray();
+                from i in t.GetInterfaces()
+                where i.IsGenericType && i.GetGenericTypeDefinition() == typeof(IMapFrom<>) &&
+                      !t.IsAbstract &&
+                      !t.IsInterface
+                select new
+                {
+                    Source = i.GetGenericArguments()[0],
+                    Destination = t
+                }).ToArray();
 
 
             foreach (var map in mapsFrom)
@@ -81,15 +107,15 @@ namespace Threenine.Map
 
 
             var mapsTo = (from t in types
-                          from i in Reflect.OnTypes.GetInterfaces(t)
-                          where Reflect.OnTypes.IsGenericType(i) && i.GetGenericTypeDefinition() == typeof(IMapTo<>) &&
-                                !Reflect.OnTypes.IsAbstract(t) &&
-                                !Reflect.OnTypes.IsInterface(t)
-                          select new
-                          {
-                              Source = t,
-                              Destination = Reflect.OnTypes.GetGenericArguments(i).First()
-                          }).ToArray();
+                from i in t.GetInterfaces()
+                where i.IsGenericType && i.GetGenericTypeDefinition() == typeof(IMapTo<>) &&
+                      !t.IsAbstract &&
+                      !t.IsInterface
+                select new
+                {
+                    Source = i.GetGenericArguments()[0],
+                    Destination = t
+                }).ToArray();
 
 
             foreach (var map in mapsTo)
