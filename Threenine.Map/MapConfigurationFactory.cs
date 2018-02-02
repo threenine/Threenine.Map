@@ -7,15 +7,10 @@ using AutoMapper;
 namespace Threenine.Map
 {
     public class MapConfigurationFactory
-    {   
+    {
         public static MapperConfiguration CreateConfiguration(IList<Type> types)
         {
-            MapperConfiguration config = new MapperConfiguration(cfg =>
-             {
-                 LoadAllMappings(cfg, types);
-             });
-
-
+            MapperConfiguration config = new MapperConfiguration(cfg => { LoadAllMappings(cfg, types); });
             return config;
         }
 
@@ -38,22 +33,18 @@ namespace Threenine.Map
         public static void LoadMapsFromAssemblies(params Assembly[] assemblies)
         {
             var types = assemblies.SelectMany(a => a.GetExportedTypes()).ToArray();
-
-
             Mapper.Initialize(cfg => LoadAllMappings(cfg, types));
-
         }
-
 
 
         public static void LoadAllMappings(IList<Type> types)
         {
             Mapper.Initialize(
-                 cfg =>
-                 {
-                     LoadStandardMappings(cfg, types);
-                     LoadCustomMappings(cfg, types);
-                 });
+                cfg =>
+                {
+                    LoadStandardMappings(cfg, types);
+                    LoadCustomMappings(cfg, types);
+                });
         }
 
 
@@ -71,7 +62,7 @@ namespace Threenine.Map
                 where typeof(ICustomMap).IsAssignableFrom(t) &&
                       !t.IsAbstract &&
                       !t.IsInterface
-                select (ICustomMap)Activator.CreateInstance(t)).ToArray();
+                select (ICustomMap) Activator.CreateInstance(t)).ToArray();
 
 
             foreach (var map in instancesToMap)
@@ -79,13 +70,7 @@ namespace Threenine.Map
                 map.CustomMap(config);
             }
         }
-
-        private static ICustomMap InitializeCustomMappingObject(Type t)
-        {
-            return (ICustomMap)Activator.CreateInstance(t, true);
-        }
-
-
+        
         public static void LoadStandardMappings(IMapperConfigurationExpression config, IList<Type> types)
         {
             var mapsFrom = (from t in types
@@ -122,9 +107,6 @@ namespace Threenine.Map
             {
                 config.CreateMap(map.Source, map.Destination);
             }
-
-
         }
-
     }
 }

@@ -16,6 +16,8 @@
     <NeutralLanguage>en</NeutralLanguage>
     <RepositoryUrl>https://github.com/threenine/ReflectMap</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes>Breaking changes in version 1.0.2 - removed dependency on PhilosophicalMonkey. 
+- added new Scan Method</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
