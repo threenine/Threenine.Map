@@ -8,29 +8,28 @@ using Xunit;
 namespace MapperTests
 {
     [Collection("Mapping")]
-    public class ComplexDomainObjectTests : IDisposable
+    public class SimpleDomainObjectTests :IDisposable
     {
         private readonly MapperFixture _mapperFixture;
-        public ComplexDomainObjectTests(MapperFixture fixture)
+        public SimpleDomainObjectTests(MapperFixture fixture)
         {
             _mapperFixture = fixture;
-         
+        
         }
+       
         [Fact]
-        public void ShouldMapComplexObject()
+        public void ShouldMapSimpleObject()
         {
-            
-            var testobj = Builder<ComplexDomainObject>.CreateNew().Build();
+            var testobj = Builder<SimpleDomainObject>.CreateNew().Build();
             var ent = Mapper.Map<SimpleEntity>(testobj);
-            
           
             Assert.NotNull(ent);
             Assert.IsAssignableFrom<SimpleEntity>(ent);
-            Assert.Equal(ent.Name, string.Concat(testobj.Firstname, " ", testobj.LastName));
-            Assert.Equal(ent.Description, string.Concat(testobj.Title, " ", testobj.Summary));
+            Assert.Equal(ent.Name, testobj.Name);
         }
 
-      
+        
+
         public void Dispose()
         {
             _mapperFixture?.Dispose();

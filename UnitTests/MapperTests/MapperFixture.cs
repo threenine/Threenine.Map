@@ -11,7 +11,7 @@ namespace MapperTests
     {
         public MapperFixture()
         {
-            MapConfigurationFactory.Scan<MapperTests.MapperFixture>();
+            MapConfigurationFactory.Scan<MapperFixture>();
         }
 
         public void Dispose()

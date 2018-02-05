@@ -1,0 +1,20 @@
++		InnerException	{System.Exception: Call to Node module failed with error: Error: Cannot find module './wwwroot/dist/vendor-manifest.json'
+    at Function.Module._resolveFilename (module.js:469:15)
+    at Function.Module._load (module.js:417:25)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at module.exports (C:\code\prototype\SMS\webpack.config.js:36:27)
+    at createWebpackDevServer (C:\code\prototype\SMS\node_modules\aspnet-webpack\WebpackDevMiddleware.js:176:31)
+    at createWebpackDevServer (C:\Users\garyw\AppData\Local\Temp\tmp7A46.tmp:74:50)
+    at C:\Users\garyw\AppData\Local\Temp\tmp7B31.tmp:113:19
+    at IncomingMessage.<anonymous> (C:\Users\garyw\AppData\Local\Temp\tmp7B31.tmp:132:38)
+    at emitNone (events.js:86:13)
+   at Microsoft.AspNetCore.NodeServices.HostingModels.HttpNodeInstance.<InvokeExportAsync>d__7`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.NodeServices.HostingModels.OutOfProcessNodeInstance.<InvokeExportAsync>d__14`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.NodeServices.NodeServicesImpl.<InvokeExportWithPossibleRetryAsync>d__10`1.MoveNext()}	System.Exception
