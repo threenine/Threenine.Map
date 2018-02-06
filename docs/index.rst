@@ -20,11 +20,7 @@
 
 .. _feature-docs:
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Feature Documentation
 
-   MappingConfigurationFactory
 
 Introduction
 ============
@@ -39,5 +35,9 @@ Threenine.Map supports the following platforms:
 * .NET 4.5.2+
 * .NET Platform Standard 2.0
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Feature Documentation
 
+   MappingConfigurationFactory
 

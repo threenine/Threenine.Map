@@ -15,3 +15,15 @@ How to install
 ==============
 Threenine.map is available via a nuget package `Threenine.map 
 <https://www.nuget.org/packages/Threenine.Map/>`_.
+
+Install via package manager :
+::
+
+   Install-Package Threenine.Map  
+
+Or using the dotnet core cli :
+::
+
+    dotnet add package Threenine.Map
+
+
