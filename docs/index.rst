@@ -6,8 +6,25 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: User Documentation
 
+.. _user-docs:
+
+.. toctree::
+   :hidden:
+   :maxdepth: 2
+   :caption: User Documentation
+
+   Getting-started
+  
+
+.. _feature-docs:
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Feature Documentation
+
+   MappingConfigurationFactory
 
 Introduction
 ============
