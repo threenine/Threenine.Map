@@ -9,8 +9,8 @@
    :caption: Contents:
 
 
-Threenine.Map documentation
-=========================================
+Introduction
+============
 
 Threenine.Map helps you do this by just implementing one of the mapping interfaces in your view models and domain models, and you're set!
 
