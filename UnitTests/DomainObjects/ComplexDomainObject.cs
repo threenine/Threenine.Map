@@ -17,6 +17,8 @@ namespace DomainObjects
                 .ForMember(dest => dest.Name, opt => opt.MapFrom(src => string.Concat( src.Firstname, " ", src.LastName )))
                 .ForMember(dest => dest.Description, opt => opt.MapFrom(src => string.Concat( src.Title , " ", src.Summary)))
                 .ForMember(dest => dest.Age, opt => opt.MapFrom(src => src.Age));
+        
+        //fba9d-83468-35e16-85b06-cf0ca
         }
     }
 
