@@ -22,7 +22,10 @@ A database entity that has two properties
 
 A domain object with the same 2 properties with the same names
 
+
+
 ::
+
     public class DomainObject
     {
         public string Name {get;set;}
@@ -33,6 +36,7 @@ You don't necessarily want to write mapping logic to map between the two objects
 interfaces to define the mappings
 
 ::
+
     public class DatabaseEntity : IMapTo<DomainObject>
     {
         public string Name {get;set;}
