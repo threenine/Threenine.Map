@@ -14,6 +14,7 @@
    :caption: User Documentation
 
    Getting-started
+
   
 
 
@@ -35,5 +36,6 @@ Threenine.Map supports the following platforms:
    :maxdepth: 2
    :caption: Feature Documentation
 
+   Define-Maps
    MapConfigurationFactory
 
