@@ -7,7 +7,7 @@
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Company>Three Nine Consulting Limited</Company>
     <Authors>Gary Woodfine</Authors>
-    <PackageProjectUrl>https://garywoodfine.com/generic-repository-pattern-net-core/</PackageProjectUrl>
+    <PackageProjectUrl>https://threenine.github.io/ReflectMap/</PackageProjectUrl>
     <PackageIconUrl>http://static.threenine.co.uk/threeninemap_icon.png</PackageIconUrl>
     <PackageTags>mapping AutoMapper Reflection</PackageTags>
     <Copyright>Copyright ©2018 Three Nine Consulting Limited</Copyright>
