@@ -14,4 +14,4 @@ The library combines  all the power of Automapper to assist in implementing mapp
 
 
 
-[![threenine logo](https://threenine.co.uk/wp-content/uploads/2016/12/threenine_footer.png)](https://threenine.co.uk/)
+[![threenine logo](http://static.threenine.co.uk/img/github_footer.png)](https://threenine.co.uk/)

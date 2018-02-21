@@ -46,9 +46,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Threenine.Map'
-copyright = '2018, Three Nine Consulting Limited'
-author = 'Gary Woodfine'
+project = u'Threenine.Map'
+copyright = u'2018, Three Nine Consulting Limited'
+author = u'Gary Woodfine'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -89,8 +89,12 @@ html_theme = 'sphinx_rtd_theme'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+ html_theme_options = {
+     'logo_only' : True,
+     'display_version' :False
+ }
 
+html_logo = 'img/threenine.png'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
