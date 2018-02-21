@@ -7,7 +7,9 @@ Threenine.Map helps you do this by just implementing one of the mapping interfac
 
 The library combines  all the power of Automapper to assist in implementing mappings in projects by locating the mapping logic within the Domain Objects & View Models.
 
+## Documentation
 
+Comprehensive documentation and examples of use of available on  [Threenine.Map](http://threeninemap.readthedocs.io/en/latest/Getting-started.html)
 
 
 
