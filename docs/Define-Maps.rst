@@ -66,13 +66,14 @@ It is in the CustomMap method that you can use all the power and functionality o
 
 ::
     
-     public class ComplexDomainObject  :ICustomMap
+     public class ComplexDomainObject  : ICustomMap
     {
         public string Firstname { get; set; }
         public string LastName { get; set; }
         public string Summary { get; set; }
         public string Title { get; set; }
         public int Age { get; set; }
+
         public void CustomMap(IMapperConfigurationExpression configuration)
         {
             configuration.CreateMap<ComplexDomainObject, SimpleEntity>()
