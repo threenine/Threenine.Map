@@ -28,3 +28,16 @@ Configure method is
         }
     }
 
+Your mappings will now be available throughout your application.  So now making any mapping call such  as;
+
+::
+
+        public IEnumerable<Referrer> GetAllActive()
+        {
+            var threats = _unitOfWork.GetRepository<Threat>()
+                .Get(predicate: x => x.Status.Name == Enabled && x.ThreatType.Name == Referer ).AsEnumerable();
+          return Mapper.Map<IEnumerable<Referrer>>(source: threats);
+          
+        }
+
+Will result in your Mapping being invoked
