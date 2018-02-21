@@ -14,6 +14,8 @@ To do so ise really easy, for instance if you are working on a Web Application (
 Configure method is 
 
 ::
+
+
     public class Startup
     {
         public Startup(IConfiguration configuration)
