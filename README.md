@@ -7,8 +7,8 @@ Threenine.Map helps you do this by just implementing one of the mapping interfac
 
 The library combines  all the power of Automapper to assist in implementing mappings in projects by locating the mapping logic within the Domain Objects & View Models.
 
-Install
-=======================
+## Install
+
 You can find the package on [NuGet Gallery](https://www.nuget.org/packages/Threenine.Map/).
 
 To install Threenine.Map, run the following command in the Package Manager Console:
