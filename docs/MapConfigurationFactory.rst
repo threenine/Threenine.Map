@@ -43,3 +43,50 @@ Your mappings will now be available throughout your application.  So now making 
         }
 
 Will result in your Mapping being invoked
+
+LoadMapsFromAssemblies
+----------------------
+
+If speed and optimisation is a concern and you would rather explicitly pass in your assemblies containing your mapping logic you can do so, making use of the `LoadMapsFromAssemblies`
+method. It accepts a `params` array of assemblies, which you can supply an unlimited assemblies to it containing your mapping logic.
+
+One way to do so would be to define a helper method to return an assembly by passing name to it, then retrieve the assmebly from those names
+::
+    
+    public class GetMappings
+    {
+        public void Get()
+        {
+            var domainObjects = GetAssemblyByName("DomainObjects");
+            var entityObjects = GetAssemblyByName("EntityObjects");
+
+            MapConfigurationFactory.LoadMapsFromAssemblies(domainObjects,  entityObjects);
+        }
+
+        private Assembly GetAssemblyByName(string name)
+        {
+            return AppDomain.CurrentDomain.GetAssemblies().SingleOrDefault(assembly => assembly.GetName().Name == name);
+        }
+    }
+
+ 
+LoadAllMappings
+---------------
+If you only want to load mappings from a particular assembly then you can make use of `LoadAllMappings` making use of a smilar stategy.
+
+::
+    
+    public class GetMappings
+    {
+        public void Get()
+        {
+            var domainObjects = GetAssemblyByName("DomainObjects");
+            MapConfigurationFactory.LoadAllMappings(domainObjects.GetTypes());
+        }
+
+        private Assembly GetAssemblyByName(string name)
+        {
+            return AppDomain.CurrentDomain.GetAssemblies().SingleOrDefault(assembly => assembly.GetName().Name == name);
+        }
+    }
+

@@ -7,14 +7,14 @@
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Company>Three Nine Consulting Limited</Company>
     <Authors>Gary Woodfine</Authors>
-    <PackageProjectUrl>https://threenine.github.io/ReflectMap/</PackageProjectUrl>
+    <PackageProjectUrl>https://threenine.github.io/Threenine.Map/</PackageProjectUrl>
     <PackageIconUrl>http://static.threenine.co.uk/threeninemap_icon.png</PackageIconUrl>
     <PackageTags>mapping AutoMapper Reflection</PackageTags>
     <Copyright>Copyright ©2018 Three Nine Consulting Limited</Copyright>
     <Description>Reflection  mapper wrapper for AutoMapper</Description>
     <PackageLicenseUrl>http://opensource.org/licenses/MS-PL</PackageLicenseUrl>
     <NeutralLanguage>en</NeutralLanguage>
-    <RepositoryUrl>https://github.com/threenine/ReflectMap</RepositoryUrl>
+    <RepositoryUrl>https://github.com/threenine/Threenine.Map</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageReleaseNotes>Breaking changes in version 1.0.2 - removed dependency on PhilosophicalMonkey. 
 - added new Scan Method</PackageReleaseNotes>
