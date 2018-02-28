@@ -38,4 +38,8 @@ Or dotnet core cli :
 
     dotnet add package Threenine.Map
 
+Source code
+***********
 
+All source code for this library is available for inspection at the   `Threenine.map Github 
+<https://github.com/threenine/Threenine.Map/>`_
