@@ -16,7 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DomainObjects\DomainObjects.csproj" />
-    <ProjectReference Include="..\..\Threenine.Map\Threenine.Map.csproj" />
+    <ProjectReference Include="..\..\src\Threenine.Map.csproj" />
     <ProjectReference Include="..\EntityObjects\EntityObjects.csproj" />
   </ItemGroup>
 

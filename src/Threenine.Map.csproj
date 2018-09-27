@@ -20,9 +20,7 @@
 - added new Scan Method</PackageReleaseNotes>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Include="readme.txt" Pack="True" PackagePath=".">
-  </ItemGroup>
+ 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="6.2.2" />
     <PackageReference Include="System.Collections" Version="4.3.0" />
