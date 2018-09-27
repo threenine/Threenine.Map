@@ -12,9 +12,9 @@ before_build:
   # Display .NET Core version
   - cmd: dotnet --version
   # Display minimal restore text
-  - cmd: dotnet restore ./Threenine.Map/Threenine.Map.csproj --verbosity m
+  - cmd: dotnet restore ./src/Threenine.Map.csproj --verbosity m
 build_script:
-    - cmd: dotnet build ./Threenine.Map/Threenine.Map.csproj -c Release
+    - cmd: dotnet build ./src/Threenine.Map.csproj -c Release
     - cmd: dotnet pack  -c Release /p:PackageVersion=1.0.2
 test_script:
     - cmd: dotnet test "./UnitTests/MapperTests/MapperTests.csproj" -c Release
