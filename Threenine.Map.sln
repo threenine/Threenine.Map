@@ -4,14 +4,7 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Threenine.Map", "src\Threenine.Map.csproj", "{1CDD5884-E7D3-435B-B0FC-30DAC41B3B94}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1F5C8EB2-12EE-4ACE-9084-1F9C4474CC84}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MapperTests", "tests\MapperTests\MapperTests.csproj", "{9BF2645A-007C-4402-9AAB-08F813CBF680}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DomainObjects", "tests\DomainObjects\DomainObjects.csproj", "{8A8B8DD5-7961-49C6-A2A9-F91954236396}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityObjects", "tests\EntityObjects\EntityObjects.csproj", "{36A8C934-D5DB-4153-86D3-DC8975421E78}"
-EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
