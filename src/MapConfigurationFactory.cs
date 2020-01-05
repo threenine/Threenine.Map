@@ -24,7 +24,7 @@ namespace Threenine.Map
             LoadMapsFromAssemblies(assembliesToLoad.ToArray());
         }
 
-        public static void LoadMapsFromAssemblies(params Assembly[] assemblies)
+       private static void LoadMapsFromAssemblies(params Assembly[] assemblies)
         {
             var types = assemblies.SelectMany(a => a.GetExportedTypes()).ToArray();
             LoadAllMappings(types);
@@ -33,6 +33,9 @@ namespace Threenine.Map
 
         public static void LoadAllMappings(IList<Type> types)
         {
+            
+            
+            
             Mapper.Initialize(
                 cfg =>
                 {

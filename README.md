@@ -19,6 +19,10 @@ or using the Dotnet Core CLI
 
 `dotnet add package Threenine.Map`
 
+The package will install Automapper 8.1.0.
+
+*** Do not attempt to use the library with Automapper 9.X +  breaking with the removal of the static API
+
 ## Documentation
 
 We are currently compiling  comprehensive documentation and examples of use of available on  [Threenine.Map - Read the Docs](http://threeninemap.readthedocs.io/en/latest/Getting-started.html).
