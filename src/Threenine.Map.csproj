@@ -16,7 +16,7 @@
     <NeutralLanguage>en</NeutralLanguage>
     <RepositoryUrl>https://github.com/threenine/Threenine.Map</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageReleaseNotes>Updated to make use of Automapper 8.0</PackageReleaseNotes>
+    <PackageReleaseNotes>Updated to make use of Automapper 8.1</PackageReleaseNotes>
     <Title>Threenine.Map</Title>
     <PackageLicenseUrl>http://opensource.org/licenses/MS-PL</PackageLicenseUrl>
    </PropertyGroup>
