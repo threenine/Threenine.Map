@@ -31,11 +31,8 @@ namespace Threenine.Map
         }
 
 
-        public static void LoadAllMappings(IList<Type> types)
+        private static void LoadAllMappings(IList<Type> types)
         {
-            
-            
-            
             Mapper.Initialize(
                 cfg =>
                 {
@@ -43,9 +40,8 @@ namespace Threenine.Map
                     LoadCustomMappings(cfg, types);
                 });
         }
-
         
-        public static void LoadCustomMappings(IMapperConfigurationExpression config, IList<Type> types)
+        private static void LoadCustomMappings(IMapperConfigurationExpression config, IList<Type> types)
         {
             var instancesToMap = (from t in types
                 from i in t.GetInterfaces()
@@ -61,7 +57,7 @@ namespace Threenine.Map
             }
         }
         
-        public static void LoadStandardMappings(IMapperConfigurationExpression config, IList<Type> types)
+        private static void LoadStandardMappings(IMapperConfigurationExpression config, IList<Type> types)
         {
             var mapsFrom = (from t in types
                 from i in t.GetInterfaces()
