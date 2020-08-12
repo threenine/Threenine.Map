@@ -3,6 +3,10 @@
 .DS_Store
 #ignore thumbnails created by windows
 Thumbs.db
+.idea
+build
+package
+.vscode
 #Ignore files build by Visual Studio
 *.obj
 *.exe
