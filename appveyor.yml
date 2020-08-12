@@ -1,7 +1,0 @@
-version: 1.0.{build}
-configuration: Release
-platform: x64
-build:
-  project: Threenine.Map.sln
-  publish_nuget: true
-  verbosity: detailed

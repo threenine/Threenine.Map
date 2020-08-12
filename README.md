@@ -1,5 +1,5 @@
 # Threenine.Map
-[![Build status](https://ci.appveyor.com/api/projects/status/5tm9exklhej7jhs9?svg=true)](https://ci.appveyor.com/project/garywoodfine/reflectmap) [![NuGet](http://img.shields.io/nuget/v/Threenine.Map.svg)](https://www.nuget.org/packages/Threenine.Map/) [![NuGet Downloads](http://img.shields.io/nuget/dt/Threenine.Map.svg?style=flat)](https://www.nuget.org/packages/Threenine.Map/) [![Twitter Follow](https://img.shields.io/twitter/follow/threenine39.svg?style=social?maxAge=2592000)](https://twitter.com/threenine39) [![Documentation Status](https://readthedocs.org/projects/threeninemap/badge/?version=latest)](http://threeninemap.readthedocs.io/en/latest/?badge=latest)
+[![NuGet](http://img.shields.io/nuget/v/Threenine.Map.svg)](https://www.nuget.org/packages/Threenine.Map/) [![NuGet Downloads](http://img.shields.io/nuget/dt/Threenine.Map.svg?style=flat)](https://www.nuget.org/packages/Threenine.Map/) [![Twitter Follow](https://img.shields.io/twitter/follow/threenine39.svg?style=social?maxAge=2592000)](https://twitter.com/threenine39) [![Documentation Status](https://readthedocs.org/projects/threeninemap/badge/?version=latest)](http://threeninemap.readthedocs.io/en/latest/?badge=latest)
 
 Want a simple way to create clean & simple configuration for AutoMapper?
 
@@ -29,6 +29,11 @@ We are currently compiling  comprehensive documentation and examples of use of a
 
 If you find there are aspects of the library that you are unsure of or would like further clarification, [report  an issue](https://github.com/threenine/ReflectMap/issues) and we'll attempt to address is as soon as resource allows. 
 
+### Support This Project
+
+If you have found this project helpful, either as a library that you use or as a learning tool, please consider buying the team a coffee:
+
+<a href="https://www.buymeacoffee.com/XBhTJcRiC" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important" ></a>
 
 
 
