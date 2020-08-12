@@ -46,7 +46,6 @@ namespace Threenine.Map
             LoadAllMappings(types);
         }
 
-
         private static void LoadAllMappings(IList<Type> types)
         {
             Mapper.Initialize(
